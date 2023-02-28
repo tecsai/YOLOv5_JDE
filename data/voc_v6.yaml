@@ -1,0 +1,64 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC
+# Example usage: python train.py --data VOC.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── VOC  ← downloads here
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# 数据集路径
+# path: ../datasets/VOC
+# train: # train images (relative to 'path')  16551 images
+#   - images/train2012
+#   - images/train2007
+#   - images/val2012
+#   - images/val2007
+# val: # val images (relative to 'path')  4952 images
+#   - images/test2007
+# test: # test images (optional)
+#   - images/test2007
+
+# # Classes
+# nc: 20  # number of classes
+# names: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog',
+#         'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']  # class names
+
+
+########### [DSAI]指定数据集 ############
+
+###########桥梁巡检############
+# # BridgeInsp_20211102
+# train: ../../002_Datasets/BridgeInsp_20211102/images/train/
+# val: ../../002_Datasets/BridgeInsp_20211102/images/val/
+# # 类别数
+# nc: 9
+# # 类别名
+# names: ["BL01", "DJ01", "LJ01", "FW01", "KD01", "MM01", "ZZ01", "XSG01", "crack"]
+###########桥梁巡检############
+
+
+# ###########电力巡检############
+# # 48电力目标
+# path: ../../002_Datasets/Power48_20220817
+# train: images/train/
+# val: images/val/
+# # 类别数
+# nc: 48
+# # 类别名
+# names: ["GD01", "GC01", "GC02", "GC03", "GC04", "GC05", "GX01", "GS01", "II01", "II02", "IS01", "IR01", "IX01", "IX02", "IX03", "IX04", "IS02", "IS03",
+# "IX05", "IX06", "OL01", "OL02", "ON01", "IX07", "IX08", "IX09", "IX11", "IX12", "II03", "II04", "OT05", "GC06", "IS04", "IS05", "IR02", "IX10", "IX13",
+# "IX14", "IX15", "IX16", "GC07", "IX17", "II05", "IS06", "IX19", "II06", "GL01", "GL02"]
+# ###########电力巡检############
+
+###########ISR30Car############
+# ISR30 车辆识别
+path: ../../002_Datasets/DroneView_Vehicle_20221028
+train: images/train/
+val: images/val/
+# 类别数
+nc: 1
+# 类别名
+names: ["car"]
+###########电力巡检############

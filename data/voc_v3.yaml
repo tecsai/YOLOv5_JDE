@@ -1,0 +1,69 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: bash data/scripts/get_voc.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+
+# class names VOC
+# names: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog',
+#         'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+
+# ### DSAI 48电力目标
+# train: ../../002_Datasets/TM_20210407/images/train/
+# val: ../../002_Datasets/TM_20210407/images/val/
+# ### DSAI 类别数
+# nc: 48
+# ### DSAI 类别名
+# names: ["GD01", "GC01", "GC02", "GC03", "GC04", "GC05", "GX01", "GS01", "II01", "II02", "IS01", "IR01", "IX01", "IX02", "IX03", "IX04", "IS02", "IS03",
+# "IX05", "IX06", "OL01", "OL02", "ON01", "IX07", "IX08", "IX09", "IX11", "IX12", "II03", "II04", "OT05", "GC06", "IS04", "IS05", "IR02", "IX10", "IX13",
+# "IX14", "IX15", "IX16", "GC07", "IX17", "II05", "IS06", "IX19", "II06", "GL01", "GL02"]
+
+
+# ### DSAI YIWEI-UAV
+# train: ../../002_Datasets/YIWEI_20210701/images/train/
+# val: ../../002_Datasets/YIWEI_20210701/images/val/
+# ### DSAI 类别数
+# nc: 1
+# ### DSAI 类别名
+# names: ["UAV01"]
+
+# ### DSAI FIRESMOG_20210715
+# train: ../../002_Datasets/FIRESMOG_20210715/images/train/
+# val: ../../002_Datasets/FIRESMOG_20210715/images/val/
+# ### 类别数
+# nc: 2
+# ### 类别名
+# names: ["smog", "fire"]
+
+### DSAI Helmet_20210922
+# train: ../../002_Datasets/Helmet_20210922/images/train/
+# val: ../../002_Datasets/Helmet_20210922/images/val/
+# ### 类别数
+# nc: 2
+# ### 类别名
+# names: ["hat", "person"]
+
+
+# ### DSAI VisDrone
+# train: ../../002_Datasets/VisDrone/images/train/
+# val: ../../002_Datasets/VisDrone/images/val/
+# ### 类别数
+# nc: 12
+# ### 类别名
+# names: ["ignored regions", "pedestrian", "people", "bicycle", "car", "van", "truck", "tricycle", "awning-tricycle", "bus", "motor", "others"]
+
+
+### DSAI BridgeInsp_20211102
+train: ../../002_Datasets/BridgeInsp_20211102/images/train/
+val: ../../002_Datasets/BridgeInsp_20211102/images/val/
+### 类别数
+nc: 9
+### 类别名
+names: ["BL01", "DJ01", "LJ01", "FW01", "KD01", "MM01", "ZZ01", "XSG01", "crack"]
